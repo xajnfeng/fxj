@@ -51,7 +51,8 @@ VPNGATE_MIRROR = os.environ.get(
     "https://raw.githubusercontent.com/fdciabdul/Vpngate-Scraper-API/main/json/data.json",
 )
 # 已部署的 Cloudflare Worker 检测接口 (GET /check?proxyip=host:port, 实测确认)
-WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://check.helei.kdns.fr/check?sstp=vpn:vpn@")
+WORKER_CHECK_URL = os.environ.get("CHECK_WORKER", "https://
+fxj.ferrarifxj.us.ci/check?sstp=vpn:vpn@")
 CONCURRENCY = max(1, int(os.environ.get("CHECK_CONCURRENCY", "32")))   # 与 Worker 网页端一致的并发模型
 CHECK_TIMEOUT = float(os.environ.get("CHECK_TIMEOUT", "90"))          # 单请求客户端超时 (秒)
 MAX_CHECK_NODES = int(os.environ.get("MAX_CHECK_NODES", "0"))         # 0=不限; 本地测试可设小值
@@ -460,8 +461,8 @@ EDGE_HOSTS = [
     h.strip()
     for h in os.environ.get(
         "EDGE_HOSTS",
-        "saas.072159.xyz:443,hzytjy.cn:443,ali.nonull.pp.ua:443,auto.dolby.dpdns.org:443,"
-        "cdn.cnno.de:443,saas.sin.fan:443,cf.777791.xyz:443",
+        "test.509666.xyz:443,guide.for.edu.sg:443,openai.com:443,ahrefs.com:443,dianomi.com:443,www.vastnovel.com:443,www.carousell.sg:443,markmonitor.com:443,01-cctv.com:443,www.sloomb.com:443,jobsdb.com:443,m.iyf.tv:443,www.deepl.com:443,mfa.gov.ua:443,cnllm.com:443,www.xiaoshuofen.com:443,spring.io:443,hzytjy.cn:443,store.ubi.com:443,cfip-ct.stoeaves.us.ci:443,staticdelivery.nexusmods.com:443,dnew.cc:443,www.sofi.com:443,www.5h.com:443,www.mc.js.cool:443,www.giannidelprete.it:443,"
+        "p.etime.vip:443,cf.xreak.top:443,bbs.alipansou.com:443,cf.3666888.xyz:443,cf-cname.xingpingcn.top:443,api.gzcrtw.com:443,cf.1o.ee:443,www.5199dy.com:443,cf.itv888.cn:443,eii.at:443,tt.78607323.xyz:443,baota.us.kg:443,cdn.204910.best:443,saas.sin.fan:443,fn.130519.xyz:443,www.mfyx.cn:443,saas.072159.xyz:443,cf.nyanya.moe:443,www.dbs.com.sg:443,auto.dolby.dpdns.org:443,www.shopify.com:443,serviceshub.samsclub.com:443,www.dg22.top:443,www.leics.police.uk:443,cdns.doon.eu.org:443,www.akasantech.com:443",
     ).split(",")
     if h.strip()
 ]
@@ -522,8 +523,9 @@ def build_hosts_text(data):
 
 
 # edgetunnel 完整订阅 (vless://) 配置
-EDT_UUID = os.environ.get("EDT_UUID", "90c14586-42a5-4c30-959d-8b36608d67f7")
-EDT_DOMAIN = os.environ.get("EDT_DOMAIN", "ed.xiaolei.qzz.io")
+EDT_UUID = os.environ.get("EDT_UUID", "c91c08b3-de6e-47a3-8343-2cc7a393f372")
+EDT_DOMAIN = os.environ.get("EDT_DOMAIN", "
+ferrarifxj.ferrarifxj.us.ci")
 EDT_FINGERPRINT = os.environ.get("EDT_FINGERPRINT", "chrome")
 SUB_URL = os.environ.get("SUB_URL", "https://jerylihub.github.io/gate/sub.txt")
 
